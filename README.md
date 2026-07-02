@@ -29,8 +29,33 @@ LeanCFTA develops a machine-checked formalization of coherent fault trees in Lea
 
 Installation
 
-Clone the repository
+1. Clone the repository
 
-git clone https://github.com/<username>/LeanCFTA.git
+   git clone https://github.com/<username>/LeanCFTA.git
 
+2. Enter the project
 
+   cd LeanCFTA
+
+3. Fetch dependencies
+
+   lake update
+
+4. Build
+
+   lake build
+   
+
+Using the Library
+
+Import the complete library
+
+   import Main
+
+or import individual modules
+
+   import FaultTree.CoherentSyntax
+   import FaultTree.CoherentQualitative
+   import FaultTree.CoherentSemantics
+   import FaultTree.CoherentCutSets
+   import FaultTree.CoherentCaseStudy
