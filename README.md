@@ -24,3 +24,13 @@ Fault Tree Analysis (FTA) is one of the most widely used safety analysis techniq
 Although numerous algorithms exist for qualitative fault-tree analysis, they are usually implemented using conventional software and therefore rely on testing for correctness.
 
 LeanCFTA develops a machine-checked formalization of coherent fault trees in Lean 4, providing mathematically verified algorithms for structural analysis and cut-set generation together with machine-checked correctness proofs.
+
+----------------------------------------------------------------------------------------
+
+Installation
+
+Clone the repository
+
+git clone https://github.com/<username>/LeanCFTA.git
+
+
