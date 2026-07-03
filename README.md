@@ -48,18 +48,18 @@ Installation
 
 Using the Library
 
-Import the complete library
+   Import the complete library
 
-   import Main
+         import Main
 
-or import individual modules
+   or import individual modules
 
-   import FaultTree.CoherentSyntax
+         import FaultTree.CoherentSyntax
    
-   import FaultTree.CoherentQualitative
+         import FaultTree.CoherentQualitative
    
-   import FaultTree.CoherentSemantics
+         import FaultTree.CoherentSemantics
    
-   import FaultTree.CoherentCutSets
+         import FaultTree.CoherentCutSets
    
-   import FaultTree.CoherentCaseStudy
+         import FaultTree.CoherentCaseStudy
