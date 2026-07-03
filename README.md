@@ -31,7 +31,7 @@ Installation
 
 1. Clone the repository
 
-   git clone https://github.com/<username>/LeanCFTA.git
+   git clone https://github.com/adrashid/LeanCFTA.git
 
 2. Enter the project
 
