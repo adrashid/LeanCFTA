@@ -55,7 +55,11 @@ Import the complete library
 or import individual modules
 
    import FaultTree.CoherentSyntax
+   
    import FaultTree.CoherentQualitative
+   
    import FaultTree.CoherentSemantics
+   
    import FaultTree.CoherentCutSets
+   
    import FaultTree.CoherentCaseStudy
