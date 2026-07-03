@@ -31,19 +31,19 @@ Installation
 
 1. Clone the repository
 
-   git clone https://github.com/adrashid/LeanCFTA.git
+      git clone https://github.com/adrashid/LeanCFTA.git
 
 2. Enter the project
 
-   cd LeanCFTA
+      cd LeanCFTA
 
 3. Fetch dependencies
 
-   lake update
+      lake update
 
 4. Build
 
-   lake build
+      lake build
    
 
 Using the Library
