@@ -1,65 +1,27 @@
 # LeanCFTA
-LeanCFTA: Formalization of Coherent Fault Trees in Lean 4
 
-LeanCFTA is a machine-checked formalization of coherent fault trees in the Lean 4 theorem prover.
+LeanCFTA is a machine-checked Lean 4 framework for the formal
+modeling and verified analysis of coherent fault trees.
 
-The project provides a formally verified framework for
+The framework provides:
 
-- coherent fault-tree syntax
-- qualitative structural analysis
-- Boolean cut-set semantics
-- cut-set generation
-- soundness proofs
-- minimal cut-set generation
-- an autonomous emergency braking case study
+- coherent fault-tree syntax using basic events, AND gates, and OR gates;
+- executable Boolean semantics;
+- qualitative structural analysis;
+- recursive cut-set generation;
+- machine-checked soundness and coverage proofs;
+- verified semantic minimal cut-set computation;
+- a counterexample-oriented validation suite; and
+- an Autonomous Emergency Braking case study.
 
-All definitions and proofs are fully machine checked in Lean 4.
+## Verified Guarantees
 
-----------------------------------------------------------------------------------------
+LeanCFTA establishes the following generic results for coherent
+fault trees.
 
-Motivation
+### Soundness
 
-Fault Tree Analysis (FTA) is one of the most widely used safety analysis techniques for dependable and safety-critical systems.
+Every set produced by `cutSets` is a semantic cut set:
 
-Although numerous algorithms exist for qualitative fault-tree analysis, they are usually implemented using conventional software and therefore rely on testing for correctness.
-
-LeanCFTA develops a machine-checked formalization of coherent fault trees in Lean 4, providing mathematically verified algorithms for structural analysis and cut-set generation together with machine-checked correctness proofs.
-
-----------------------------------------------------------------------------------------
-
-Installation
-
-1. Clone the repository
-
-            git clone https://github.com/adrashid/LeanCFTA.git
-
-2. Enter the project
-
-            cd LeanCFTA
-
-3. Fetch dependencies
-
-            lake update
-
-4. Build
-
-            lake build
-   
-
-Using the Library
-
-   Import the complete library
-
-         import Main
-
-   or import individual modules
-
-         import FaultTree.CoherentSyntax
-   
-         import FaultTree.CoherentQualitative
-   
-         import FaultTree.CoherentSemantics
-   
-         import FaultTree.CoherentCutSets
-   
-         import FaultTree.CoherentCaseStudy
+```lean
+theorem cutSets_sound
